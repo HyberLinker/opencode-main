@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vCubeVLA运营年度总结</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1C2833 0%, #2E4053 100%);
+            color: #FFFFFF;
+            width: 720px;
+            height: 405px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .cover-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            position: relative;
+        }
+        
+        .accent-shape {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background: #E74C3C;
+            clip-path: polygon(100% 0, 0 0, 100% 100%);
+            opacity: 0.8;
+        }
+        
+        .main-title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            z-index: 2;
+        }
+        
+        .subtitle {
+            font-size: 24px;
+            margin-bottom: 40px;
+            color: #AAB7B8;
+            z-index: 2;
+        }
+        
+        .presenter-info {
+            position: absolute;
+            bottom: 60px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 2;
+        }
+        
+        .presenter-name {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .date {
+            font-size: 16px;
+            color: #AAB7B8;
+        }
+        
+        .project-code {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            font-size: 14px;
+            color: #AAB7B8;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="cover-container">
+        <div class="accent-shape"></div>
+        <div class="project-code">项目编号: VLA-2024-001</div>
+        
+        <h1 class="main-title">vCubeVLA运营项目<br>2024年度总结</h1>
+        <p class="subtitle">业务指标达成情况汇报</p>
+        
+        <div class="presenter-info">
+            <div class="presenter-name">汇报人: [您的姓名]</div>
+            <div class="date">2024年12月</div>
+        </div>
+    </div>
+</body>
+</html>

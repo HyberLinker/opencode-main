@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>年度业绩概览</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1C2833 0%, #2E4053 100%);
+            color: #FFFFFF;
+            width: 720px;
+            height: 405px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .dashboard-container {
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            margin-bottom: 30px;
+        }
+        
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #AAB7B8;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            flex: 1;
+        }
+        
+        .metric-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            border-left: 4px solid #E74C3C;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .metric-value {
+            font-size: 48px;
+            font-weight: bold;
+            color: #E74C3C;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+        
+        .metric-label {
+            font-size: 16px;
+            color: #AAB7B8;
+            margin-bottom: 5px;
+        }
+        
+        .metric-description {
+            font-size: 14px;
+            color: #FFFFFF;
+            opacity: 0.8;
+        }
+        
+        .accent-shape {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background: #E74C3C;
+            border-radius: 50%;
+            opacity: 0.1;
+        }
+        
+        .chart-placeholder {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px dashed rgba(231, 76, 60, 0.3);
+            border-radius: 8px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #AAB7B8;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="accent-shape"></div>
+        
+        <div class="header">
+            <h1 class="title">年度业绩概览</h1>
+            <p class="subtitle">vCubeVLA运营项目关键业务指标达成情况</p>
+        </div>
+        
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value">115%</div>
+                <div class="metric-label">收入完成率</div>
+                <div class="metric-description">超出目标15个百分点</div>
+                <div class="chart-placeholder" id="revenue-chart">收入趋势图表</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-value">23%</div>
+                <div class="metric-label">成本节约</div>
+                <div class="metric-description">运营效率显著提升</div>
+                <div class="chart-placeholder" id="cost-chart">成本优化图表</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-value">18%</div>
+                <div class="metric-label">ROI提升</div>
+                <div class="metric-description">投资回报率稳步增长</div>
+                <div class="chart-placeholder" id="roi-chart">ROI趋势图表</div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-value">92%</div>
+                <div class="metric-label">客户满意度</div>
+                <div class="metric-description">服务质量获得高度认可</div>
+                <div class="chart-placeholder" id="satisfaction-chart">满意度调查图表</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年规划</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1C2833 0%, #2E4053 100%);
+            color: #FFFFFF;
+            width: 720px;
+            height: 405px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .planning-container {
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            margin-bottom: 30px;
+        }
+        
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #AAB7B8;
+        }
+        
+        .content-area {
+            display: flex;
+            gap: 30px;
+            flex: 1;
+        }
+        
+        .goals-section {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .initiatives-section {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .goal-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 4px solid #E74C3C;
+            backdrop-filter: blur(10px);
+        }
+        
+        .goal-value {
+            font-size: 36px;
+            font-weight: bold;
+            color: #E74C3C;
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+        
+        .goal-label {
+            font-size: 16px;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .goal-description {
+            font-size: 14px;
+            color: #AAB7B8;
+            line-height: 1.4;
+        }
+        
+        .initiative-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 18px;
+            border: 1px solid rgba(231, 76, 60, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .initiative-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(231, 76, 60, 0.5);
+        }
+        
+        .initiative-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #E74C3C;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .initiative-icon {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+        
+        .initiative-detail {
+            font-size: 13px;
+            color: #AAB7B8;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .detail-bullet {
+            color: #E74C3C;
+            margin-right: 6px;
+            font-size: 12px;
+        }
+        
+        .timeline-section {
+            background: rgba(231, 76, 60, 0.1);
+            border: 1px solid rgba(231, 76, 60, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: auto;
+        }
+        
+        .timeline-title {
+            font-size: 16px;
+            color: #E74C3C;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .timeline-quarters {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        
+        .quarter {
+            flex: 1;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+            padding: 12px 8px;
+        }
+        
+        .quarter-label {
+            font-size: 14px;
+            color: #E74C3C;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .quarter-goal {
+            font-size: 12px;
+            color: #AAB7B8;
+        }
+        
+        .accent-shape {
+            position: absolute;
+            bottom: -40px;
+            right: -40px;
+            width: 120px;
+            height: 120px;
+            background: #E74C3C;
+            border-radius: 50%;
+            opacity: 0.1;
+        }
+        
+        .badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #E74C3C;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="planning-container">
+        <div class="accent-shape"></div>
+        <div class="badge">2025 战略规划</div>
+        
+        <div class="header">
+            <h1 class="title">2025年规划</h1>
+            <p class="subtitle">vCubeVLA运营项目下一年度目标与关键举措</p>
+        </div>
+        
+        <div class="content-area">
+            <div class="goals-section">
+                <div class="goal-card">
+                    <div class="goal-value">130%</div>
+                    <div class="goal-label">收入增长目标</div>
+                    <div class="goal-description">基于2024年基础，实现收入同比增长30%，进一步扩大市场份额</div>
+                </div>
+                
+                <div class="goal-card">
+                    <div class="goal-value">30%</div>
+                    <div class="goal-label">效率提升目标</div>
+                    <div class="goal-description">通过技术创新和流程优化，实现运营效率再提升30%</div>
+                </div>
+                
+                <div class="goal-card">
+                    <div class="goal-value">95%</div>
+                    <div class="goal-label">客户满意度目标</div>
+                    <div class="goal-description">持续优化服务质量，客户满意度提升至95%以上</div>
+                </div>
+            </div>
+            
+            <div class="initiatives-section">
+                <div class="initiative-card">
+                    <div class="initiative-title">
+                        <span class="initiative-icon">🚀</span>
+                        智能化升级
+                    </div>
+                    <div class="initiative-detail">
+                        <span class="detail-bullet">•</span>
+                        <span>AI算法2.0版本</span>
+                    </div>
+                    <div class="initiative-detail">
+                        <span class="detail-bullet">•</span>
+                        <span>自动化覆盖率90%</span>
+                    </div>
+                </div>
+                
+                <div class="initiative-card">
+                    <div class="initiative-title">
+                        <span class="initiative-icon">🌐</span>
+                        市场扩展
+                    </div>
+                    <div class="initiative-detail">
+                        <span class="detail-bullet">•</span>
+                        <span>新增3个区域市场</span>
+                    </div>
+                    <div class="initiative-detail">
+                        <span class="detail-bullet">•</span>
+                        <span>客户基数翻倍</span>
+                    </div>
+                </div>
+                
+                <div class="initiative-card">
+                    <div class="initiative-title">
+                        <span class="initiative-icon">⚡</span>
+                        技术创新
+                    </div>
+                    <div class="initiative-detail">
+                        <span class="detail-bullet">•</span>
+                        <span>云原生架构升级</span>
+                    </div>
+                    <div class="initiative-detail">
+                        <span class="detail-bullet">•</span>
+                        <span>性能提升5倍</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-section">
+                    <div class="timeline-title">季度里程碑</div>
+                    <div class="timeline-quarters">
+                        <div class="quarter">
+                            <div class="quarter-label">Q1</div>
+                            <div class="quarter-goal">基础建设</div>
+                        </div>
+                        <div class="quarter">
+                            <div class="quarter-label">Q2</div>
+                            <div class="quarter-goal">试点上线</div>
+                        </div>
+                        <div class="quarter">
+                            <div class="quarter-label">Q3</div>
+                            <div class="quarter-goal">全面推广</div>
+                        </div>
+                        <div class="quarter">
+                            <div class="quarter-label">Q4</div>
+                            <div class="quarter-goal">优化迭代</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
