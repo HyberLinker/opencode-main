@@ -1,0 +1,37 @@
+{
+  "version": 3,
+  "accounts": [
+    {
+      "email": "keepgoinglch@gmail.com",
+      "refreshToken": "",
+      "projectId": "gen-lang-client-0881944022",
+      "addedAt": 1769226333058,
+      "lastUsed": 1769847083590,
+      "rateLimitResetTimes": {
+        "gemini-cli:gemini-3-flash-preview": 1769847128559
+      },
+      "managedProjectId": "involuted-axle-g7kn8",
+      "fingerprint": {
+        "deviceId": "6e55b8df-bd96-4dab-bbf7-d2f226ca28d0",
+        "sessionToken": "bf47b12c1ee286e3899572dad57a90c0",
+        "userAgent": "antigravity/1.15.8 win32/x64",
+        "apiClient": "google-cloud-sdk android-studio/2024.1",
+        "clientMetadata": {
+          "ideType": "CLOUD_SHELL_EDITOR",
+          "platform": "WINDOWS",
+          "pluginType": "GEMINI",
+          "osVersion": "10.0.19042",
+          "arch": "x64",
+          "sqmId": "{E9F8C558-F2D4-47E3-9ECD-61F98CECF6BB}"
+        },
+        "quotaUser": "device-4efccbe4e8aed96b",
+        "createdAt": 1769844874585
+      }
+    }
+  ],
+  "activeIndex": 0,
+  "activeIndexByFamily": {
+    "claude": 0,
+    "gemini": 0
+  }
+}
